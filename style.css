@@ -97,7 +97,7 @@ body::before {
     transform: scale(1);
     width: 100vw;
     z-index: 0;
-    background-image: url("Resources/Images/bg.png");
+    background-image: url("Resources/Images/bg.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
