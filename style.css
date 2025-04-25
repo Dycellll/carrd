@@ -282,15 +282,15 @@ body::before {
     border: 5px solid white;
     border-radius: 50px;
     display: flex;
-    overflow-x: auto;
     gap: 30px;
     padding: 25px;
     margin: 30px auto;
     width: 85%;
     max-width: 800px;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;overflow-x: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
     touch-action: pan-y;
+    scroll-snap-type: x mandatory;
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
     animation: fadeIn 1s ease-in-out;
 }
@@ -312,6 +312,8 @@ body::before {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
@@ -608,8 +610,13 @@ body::before {
     }
 
     .achievement-image {
-        height: 80px;
-        width: 80px;
+        height: 110px;
+        width: 110px;
+        float: none;
+        border-radius: 30px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid white;
     }
 
     @media (max-width: 480px) {
@@ -639,5 +646,11 @@ body::before {
             width: 220px;
             min-width: 220px;
         }
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    #projects-container {
+        padding-bottom: 30px;
     }
 }
