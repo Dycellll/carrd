@@ -287,10 +287,10 @@ body::before {
     margin: 30px auto;
     width: 85%;
     max-width: 800px;
-    scrollbar-width: none;overflow-x: scroll !important;
-    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
-    scroll-snap-type: x mandatory;
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
     animation: fadeIn 1s ease-in-out;
 }
@@ -312,7 +312,6 @@ body::before {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    flex: 0 0 auto;
     scroll-snap-align: start;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
@@ -596,7 +595,7 @@ body::before {
     }
 
     #projects-container {
-        margin-left: -2.5%;
+        margin-left: 5%;
     }
 
     .project-card {
@@ -607,6 +606,7 @@ body::before {
     .project-image {
         width: 150px;
         height: 150px;
+        margin-left: 10%;
     }
 
     .achievement-image {
@@ -646,11 +646,5 @@ body::before {
             width: 220px;
             min-width: 220px;
         }
-    }
-}
-
-@supports (-webkit-touch-callout: none) {
-    #projects-container {
-        padding-bottom: 30px;
     }
 }
