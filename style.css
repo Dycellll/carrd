@@ -570,6 +570,12 @@ body::before {
     #cookie-per-second-upgrade-button {
         font-size: 1rem;
         padding: 8px 16px;
+        margin: 5px 0;
+    }
+
+    #reset-game {
+        margin-left: 26.8%;
+        margin-bottom: 5%;
     }
 
     button{
@@ -583,7 +589,12 @@ body::before {
     }
 
     #achievements-container{
+        margin-left: -2.5%;
         max-height: 300px;
+    }
+
+    #projects-container {
+        margin-left: -2.5%;
     }
 
     .project-card {
@@ -594,7 +605,11 @@ body::before {
     .project-image {
         width: 150px;
         height: 150px;
-        margin-left: 10%;
+    }
+
+    .achievement-image {
+        height: 80px;
+        width: 80px;
     }
 
     @media (max-width: 480px) {
