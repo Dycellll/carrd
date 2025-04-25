@@ -625,6 +625,10 @@ body::before {
         display: none;
     }
     
+    .project-card:first-child {
+        margin-top: -20px;
+    }
+
     .project-card:last-child {
         margin-bottom: 0;
     }
@@ -676,6 +680,7 @@ body::before {
         border-radius: 30px;
         object-fit: cover;
         margin-bottom: 15px;
+        margin-left: 27.5%;
         border: 3px solid white;
     }
 
